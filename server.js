@@ -1,6 +1,6 @@
 const express = require('express'),
       mongoose = require('mongoose'),
-      logger = requir('morgan');
+      logger = require('morgan');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -11,7 +11,7 @@ app.use(express.static('public'));
 
 // Database and mongoose connection
 require('./config/connection');
-const db = reuuire('./models/index');
+const db = require('./models/index');
 
 // Routes
 require('./controllers/htmlroutes')(app);

@@ -15,7 +15,7 @@ const CardSchema = new Schema({
   },
 
   imageURL: {
-    type: Text,
+    type: String,
     required: true
   }
 });
